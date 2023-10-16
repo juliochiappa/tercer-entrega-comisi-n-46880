@@ -1,0 +1,89 @@
+@media (max-width: 320px){
+    header{
+        .nav-wrapper{
+            nav .logo{
+                font-size: .875rem;
+            }
+            nav .img-logo{
+                display: none;
+            }
+            nav .menu a{
+                font-size: .5rem;
+            }
+        }
+    }
+    /*-------Main Index--------*/
+    main{
+        .descri-centro{
+            font-size: .4375rem;
+        }
+        .figuras h3{
+            display: none;
+        }
+        .figuras{
+            width: 35%;
+            margin-left: 6.0625rem;
+        }
+        .comentario{
+            font-size: .5rem;
+        }
+    }
+    /* -------Main de Conocenos------ */
+    main{
+        .imagen-conoce .centro{
+            width: 7.5rem;
+            height: 7.5rem;
+            margin-left: 5.3125rem;;
+            margin-top: .9375rem;
+        }
+        .descri-conoce{
+        display: none;
+        }
+        .direccion h3{
+            font-size: .875rem;
+            padding-top: .625rem;
+        }
+        .direccion iframe{
+            height: 6.25rem;
+            padding-top: .75rem;
+        }
+    }
+    /*-----------Main Videos----------*/
+    main{
+        .descri-video h1{
+            font-size: .9375rem;
+        }
+        .contenedor-video .videos{
+            width: 75%;
+            padding-left: 5.3125rem;
+        }
+        .explica h2{
+            font-size: .875rem;
+            padding: .9375rem;
+            text-shadow: none;
+        }       
+    }
+    /* --------Footer---------- */
+    footer{
+        padding-right: .625rem;
+        
+        .whatsapp img{
+            width: 35%;
+        }
+        .insta img{
+            width: 35%;
+        }
+        .face img{
+            width: 35%;
+        }
+        .youtube img{
+            width: 35%;
+        }
+        .contacto{
+            display: none;
+        }
+        .seguinos{
+            display: none;
+        }
+    }   
+}

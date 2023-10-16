@@ -1,0 +1,164 @@
+@media (max-width: 768px){
+    header{
+        .nav-wrapper{
+            nav .logo{
+                 font-size: 1.875rem;
+            }
+            nav .menu{
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+            }
+            nav ul{
+                @include flex(column, none, none, center, .625rem);
+            }
+            nav label{
+                display: flex;
+                color: white;
+                cursor: pointer;
+            }
+            nav #toggle:checked ~ .menu{
+                height: 100%;
+            }
+            nav .img-logo{
+                border-radius: 50%;
+            }
+            nav .menu a{
+                font-size: .9375rem;
+            }
+        }
+    }
+    /*-------Main Index--------*/
+    main{
+        .conte-figuras{
+            @include grid(none, none, none, repeat(2, 1fr), repeat(4, 1fr));
+            grid-template-areas:
+            "figuras1 figuras2"
+            "figuras1 figuras2"
+            "figuras3 figuras4"
+            "figuras3 figuras4"
+            ;
+        }
+        .descri-centro{
+            font-size: $tamaño-h1;
+        }
+        .figuras h3:hover{
+            transform: scale(1.1);
+            background-color: rgb(151, 127, 147);
+            color: white;
+        }
+        .figuras h3{
+            text-align: center;
+            font-size: 1.125rem;
+            background-color: $bg-header-footer;    
+            transition: background-color 2s, color 3s ;
+        }
+        .figuras{
+            width: 70%;
+            margin-left: 3.125rem;
+        }
+        .comentario{
+            font-size: $tamaño-h2;
+            padding: 1.25rem;
+        }
+    }
+    /* -------Main de Conocenos------ */
+    main{
+        .imagen-conoce{
+            @include grid(none, none, none, repeat(2, 1fr), repeat(4, 1fr));
+            grid-template-areas:
+            "centro1 centro2"
+            "centro1 centro2"
+            "centro3 centro4"
+            "centro3 centro4"
+            ;
+        }
+        .imagen-conoce .centro{
+            width: 70%;
+            margin-left: 3.125rem;
+        }
+        .descri-conoce{
+           font-size: $tamaño-h2;
+           padding-left: 1.25rem;
+           padding-right: 1.25rem;
+        }
+        .direccion{
+            font-size: 1.25rem;
+        }
+    }    
+    /*-----------Main Videos----------*/
+    main{
+        .descri-video{
+            font-size: $tamaño-h1;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+        }
+        .contenedor-video{
+            @include grid(none, none, 1.25rem, repeat(2, 1fr), repeat(4, 1fr));
+            gap: 1.25rem;
+            padding-left: .9375rem;
+            grid-template-areas: 
+            "video1 video2"
+            "video1 video2"
+            "video3 video4"
+            "video3 video4"
+            ;
+        }
+        .video-5{
+            display: none;
+        }
+        .video-6{
+            display: none;
+        }
+        .contenedor-video .videos{
+            width: 85%;
+            padding-left: 3.125rem;
+            border-radius: 0%;
+            overflow: visible;
+        }       
+        .explica{
+            font-size: $tamaño-h2;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem; 
+        }
+    }
+    /*---------Main Contactos---------*/
+    main{
+        .label-campos1{
+            font-size: .75rem;
+            padding-left: .625rem;
+        }
+        .input-campos1{
+            font-size: .75rem;
+        }
+        .label-campos2{
+            font-size: .75rem;
+            padding-left: .625rem;
+        }
+        .input-campos2{
+            font-size: .75rem;
+        }
+    }
+    /* --------Footer---------- */
+    footer{
+        .whatsapp img{
+            width: 50%;
+        }
+        .insta img{
+            width: 50%;
+        }
+        .face img{
+            width: 50%;
+        }
+        .youtube img{
+            width: 50%;
+        }
+        .contacto{
+            font-size: .9375rem;
+            padding-left: .9375rem;
+        }
+        .seguinos{
+            font-size: .9375rem;
+        }
+    }
+}

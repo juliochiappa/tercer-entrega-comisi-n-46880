@@ -1,0 +1,95 @@
+@media (max-width: 375px){
+    header{
+        .nav-wrapper{
+            nav .logo{
+                font-size: 1rem;
+            }
+            nav ul{
+                padding: 0px 0px;
+                gap: .3125rem;
+            }
+            nav .img-logo{
+                display: none;
+            }
+            nav .menu a{
+                font-size: .625rem;
+            }
+        }
+    }
+/*-------Main Index--------*/
+    main{        
+        .descri-centro{
+            font-size: .75rem;
+        }
+        .figuras h3{
+            display: none;
+        }
+        .figuras{
+            width: 40%;
+            margin-left: 6.5625rem;
+        }
+        .comentario{
+            font-size: .625rem;
+        }
+    }
+    /* -------Main de Conocenos------ */
+    main{
+        .imagen-conoce .centro{
+            width: 35%;
+            margin-left: 6.875rem;
+            margin-top: .9375rem;
+        }
+        .descri-conoce{
+            display: none;
+        }
+        .direccion h3{
+            font-size: .875rem;
+        }
+        .direccion iframe{
+            height: 7.5rem;
+        }
+    }
+    /*-----------Main Videos----------*/
+    main{
+        .contenedor-video{
+            padding: .3125rem .3125rem .3125rem .3125rem;
+            gap: .9375rem;
+        }
+        .descri-video h1{
+            font-size: .9375rem;
+        }
+        .contenedor-video .videos{
+            width: 72%;
+            padding-left: 6.5625rem;
+        }
+        .explica h2{
+            font-size: .875rem;
+            padding: .9375rem;
+        }       
+    }
+    /* --------Footer---------- */
+    footer{
+        padding-left: 3.125rem;
+        
+        .whatsapp img{
+            width: 40%;
+        }
+        .insta img{
+            width: 40%;
+        }
+        .face img{
+            width: 40%;
+        }
+        .youtube img{
+            width: 40%;
+        }
+        .contacto{
+            display: none;
+        }
+        .seguinos{
+            display: none;
+        }
+    }
+}
+
+

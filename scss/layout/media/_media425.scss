@@ -1,0 +1,117 @@
+@media (max-width:425px){
+    header{
+        .nav-wrapper{
+            nav .logo{
+                font-size: 1.25rem;
+            }
+            nav ul{
+                padding: 0px 0px;
+                gap: .3125rem;
+            }
+            nav .img-logo{
+                display: none;
+            }
+            nav .menu a{
+                font-size: .75rem;
+            }
+        }
+    }
+    /*-------Main Index--------*/
+    main{
+        .conte-figuras{
+            @include grid(none, none, none, repeat(1, 1fr), repeat(4, 1fr));
+            grid-template-areas: 
+            "figuras1"
+            "figuras2"
+            "figuras3"
+            "figuras4"
+            ;
+        }
+        .descri-centro{
+            font-size: .75rem;
+        }
+        .figuras h3{
+            display: none;
+        }
+        .figuras{
+            width: 45%;
+            margin-left: 6.875rem;
+        }
+        .comentario{
+            font-size: .75rem;
+        }
+    }
+    /* -------Main de Conocenos------ */
+    main{
+        .imagen-conoce{
+            @include grid(none, none, none, repeat(1, 1fr), repeat(4, 1fr));
+            grid-template-areas:
+            "centro1"
+            "centro2"
+            "centro3"
+            "centro4"
+            ;
+        }
+        .imagen-conoce .centro{
+            width: 40%;
+            margin-left: 7.5rem;
+        }
+        .descri-conoce{
+            font-size: .75rem;
+        }
+        .direccion iframe{
+            height: 9.375rem;
+        }
+        .direccion h3{
+            font-size: .9375rem;
+        }
+    }
+    /*-----------Main Videos----------*/
+    main{
+        .descri-video{
+            font-size: .625rem;
+        }
+        .contenedor-video{
+            @include grid(none, none, none, repeat(1, 1fr), repeat(4, 1fr));
+            grid-template-areas: 
+            "video1"
+            "video2"
+            "video3"
+            "video4"
+            ;
+        }
+        .contenedor-video .videos{
+                width: 74%;
+                padding-left: 6.25rem;
+        } 
+        .explica{
+                font-size: .75rem;
+                padding-left: .625rem;
+                padding-right: .625rem;
+        }          
+    }
+    /*----------Main Contacto-------*/
+   
+    /* --------Footer---------- */
+    footer{
+        padding-left: 3.125rem;
+        .whatsapp img{
+            width: 40%;
+        }
+        .insta img{
+            width: 40%;
+        }
+        .face img{
+            width: 40%;
+        }
+        .youtube img{
+            width: 40%;
+        }
+        .contacto{
+            display: none;
+        }
+        .seguinos{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+/*---------Main Contactos---------*/
+main{
+    .formulario{
+        @include flex(row, wrap, center, center, 1.25rem);
+        background-color: $bg-main;
+        width: 100%;
+        height: auto;
+        padding: 3.75rem 0rem;
+        .campos-1{
+            display: flex;
+            height: 6.25rem;
+            padding: 0px .9375rem;
+        }
+        .campos-2{
+            display: flex;
+            height: 6.25rem;
+            padding: 0rem .9375rem;
+        }
+        .legend-1{
+            padding-bottom: 1.5625rem;
+        }
+        .legend-2{
+            padding-bottom: 1.5625rem;
+        }
+        input{
+            margin-top: .625rem;
+            margin-bottom: 1.875rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+

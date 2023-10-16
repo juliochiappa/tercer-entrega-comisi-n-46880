@@ -1,0 +1,55 @@
+/*------------Main Videos----------*/
+main{
+    .descri-video{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        background-color: $bg-main;
+        padding: 2.5rem 1.25rem 2.5rem 1.25rem;
+        text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61);
+    }
+    .contenedor-video{
+        @include grid(space-between, center, .625rem, repeat(3, 1fr), repeat(2, 1fr));
+        width: 100%;
+        height: auto;
+        padding-left: 1.875rem;
+        background-color: $bg-main;
+        grid-template-areas: 
+        "video1 video2 video3"
+        "video1 video2 video3"
+        "video4 video5 video6"
+        "video4 video5 video6"
+        ;
+        .video-1{
+            grid-area: video1;
+        }
+        .video-2{
+            grid-area: video2;
+        }
+        .video-3{
+            grid-area: video3;
+        }
+        .video-4{
+            grid-area: video4;
+        }
+        .video-5{
+            grid-area: video5;
+        }
+        .video-6{
+            grid-area: video6;
+        }
+        .videos{
+            width: 90%;
+            border-radius: 10%;
+            overflow: hidden;
+            z-index: 1
+        }       
+    }
+    .explica{
+        @extend .descri-video;
+        padding: 1.25rem 1.25rem;
+    }
+}
+
+
+
+

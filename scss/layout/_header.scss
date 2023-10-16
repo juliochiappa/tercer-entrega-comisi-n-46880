@@ -1,0 +1,49 @@
+header{
+    @include flex(row, wrap, space-between, flex-end, none);
+    background-color: $bg-header-footer;
+    padding: 0px 1.25rem;
+    position: sticky;
+    top: 0rem;
+    z-index: 2;
+} 
+.nav-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem;
+    nav{
+        @include flex(none, wrap, space-between, center, none);
+        width: 100%;
+        background-color: $bg-header-footer;
+        padding: 1rem 1.5rem;
+        .img-logo{
+            border-radius: 50%;
+        }
+        .logo{
+            font-size: 2.1875rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        .menu ul{
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 500;
+            line-height: 2.375rem;
+            text-transform: uppercase;
+        }
+        .menu li a:hover{
+            color: black;
+            text-decoration: underline;
+            transition: 0.5s;
+       } 
+       nav #toggle, nav label{
+           display: none;
+       }
+    }
+}

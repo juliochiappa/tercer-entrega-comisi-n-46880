@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/Thumbs.db": false
+<<<<<<< HEAD
+    },
+    "liveServer.settings.port": 5503
+=======
+    }
+>>>>>>> 0522f7238626ab8639bf119536b089b6ab713227
+}

@@ -1,0 +1,65 @@
+/*------------Main Index/Inicio---------*/
+main{
+    
+    .descri-centro{
+        @extend .descri-video;
+    }
+    .conte-figuras{
+        @include grid(space-between, center, .9375rem, repeat(4, 1fr), repeat(2, 1fr));
+        width: 100%;
+        height: auto;
+        padding: .9375rem;
+        background-color: $bg-main;
+        grid-template-areas:
+        "figuras1 figuras2 figuras3 figuras4"
+        "figuras1 figuras2 figuras3 figuras4"
+        ;
+        }
+        .figuras-1{
+            grid-area: figuras1;
+        }
+        .figuras-2{
+            grid-area: figuras2;
+        }
+        .figuras-3{
+            grid-area: figuras3;
+        }
+        .figuras-4{
+            grid-area: figuras4;
+        }
+        .figuras-5{
+            grid-area: figuras5;
+        }
+        .figuras{
+            width: 100%;
+            background-color: $bg-main;
+            border-radius: 5%;
+            overflow: hidden;
+            box-shadow: .25rem .25rem .625rem rgba(85, 71, 71, 0.74);
+        }
+        .figuras img{
+            width: 100%;
+        }
+        .figuras h3:hover{
+            transform: scale(1.1);
+            background-color: rgb(151, 127, 147);
+            color: white;
+        }
+        .figuras h3{
+            text-align: center;
+            background-color: $bg-header-footer;    
+            transition: background-color 2s, color 3s ;
+        }
+    .comentario{
+        text-align: center;
+        font-family: 'Zilla Slab', serif;
+        background-color: $bg-main;
+        padding-bottom: 2.5rem;
+        padding-top: 1.25rem;
+    }
+}
+/*---------Pseudoclases del Index---------*/
+.conte-figuras .figuras:hover{
+    box-shadow: 0px 0px 15px grey;
+    overflow: hidden;
+}
