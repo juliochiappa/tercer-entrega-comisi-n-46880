@@ -26,7 +26,7 @@
         <header>
             <div class="nav-wrapper">
                 <nav>
-                    <img src="../assets/img/Logo.jpeg" class="img-logo animate__animated animate__backInLeft" alt="Imágen Logo"></a>
+                    <img src="../assets/img/Logo.jpeg" class="img-logo animate__animated animate__backInLeft" alt="Imágen Logo">
                     <a class="logo" href="">CIEC</a>
                     <input type="checkbox" name="" id="toggle">
                     <label for="toggle"><i class="material-icons">menu</i></label>
@@ -42,28 +42,26 @@
                 </nav>
             </div>
         </header>
-        <main>
         <main class="contenedor-formu">
             <div class="formulario">
+                <div class="soli-turno animate__animated animate__backInLeft">
+                    <h1>Solicitud de Turnos</h1>
+                </div>
                 <form action="">
                     <fieldset class="campos-1">
                         <legend class="legend-1">Datos Personales</legend>
-                            <label for="nombre" class="label-campos1">Nombre y Apellido:</label>
-                            <input type="text" id="nombre" class="input-campos1" placeholder="Ingrese su nombre" required>
-                            <label for="Correo" class="label-campos1">Correo Electrónico:</label>
-                            <input type="email" id="Correo" class="input-campos1" placeholder="Ingrese su email" required>
-                            <label for="celular" class="label-campos1">Celular:</label>
-                            <input type="tel" id="celular" class="input-campos1" placeholder="Ingrese su celular" required>
+                            <label for="nombre">Nombre y Apellido:</label>
+                            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                            <label for="Correo">Mail:</label>
+                            <input type="email" id="Correo" placeholder="Ingrese su email" required>
                     </fieldset>
                             <input type="submit">
                     <fieldset class="campos-2">
-                        <legend class="legend-2">Ingrese el tratamiento a realizarce</legend>
-                            <label for="nombre" class="label-campos2">Tratamiento Solicitado:</label>
-                            <input type="text" id="nombre" class="input-campos2" placeholder="Ingrese Tratamiento" required>
-                            <label for= "fecha" class="label-campos2">Fecha Solicitada:</label>
-                            <input type="date" id="fecha" class="input-campos2" placeholder="Ingrese fecha turno" required>
-                            <label for="hora" class="label-campos2">Hora del Turno:</label>
-                            <input type="datetime" id="hora" class="input-campos2" placeholder="Ingrese la hora" required>
+                            <legend class="legend-2">Tratamiento/s</legend>
+                            <label for="nombre">Tratamiento:</label>
+                            <input type="text" id="nombre" placeholder="Ingrese Tratamiento" required>
+                            <label for= "fecha">Fecha:</label>
+                            <input type="date" id="fecha" placeholder="Ingrese fecha turno" required>
                     </fieldset>
                             <input type="submit">
                 </form>

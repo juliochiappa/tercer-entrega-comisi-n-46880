@@ -81,17 +81,47 @@
             ;
         }
         .contenedor-video .videos{
-                width: 74%;
-                padding-left: 6.25rem;
+            width: 74%;
+            padding-left: 6.25rem;
         } 
         .explica{
-                font-size: .75rem;
-                padding-left: .625rem;
-                padding-right: .625rem;
+            font-size: .75rem;
+            padding-left: .625rem;
+            padding-right: .625rem;
         }          
     }
     /*----------Main Contacto-------*/
-   
+    main{
+        .formulario {
+            padding: .3125rem;
+            .soli-turno{
+                padding-top: .9375rem;
+                font-size: .75rem;
+            }
+            .campos-1 {
+                height: auto;
+                width: 6.25rem;
+                padding: .625rem 1.875rem .9375rem 1.875rem;
+                .legend-1 {
+                    font-size: 1.125rem;
+                    label {
+                        font-size: 3.125rem;
+                    }
+                }
+            }
+            .campos-2 {
+                height: auto;
+                width: 6.25rem;
+                padding: .625rem 1.875rem .9375rem 1.875rem;
+                .legend-2 {
+                    font-size: 1.125rem;
+                    label {
+                        font-size: .625rem;
+                    }
+                }
+            }
+        }
+    }
     /* --------Footer---------- */
     footer{
         padding-left: 3.125rem;

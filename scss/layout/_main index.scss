@@ -1,6 +1,5 @@
 /*------------Main Index/Inicio---------*/
 main{
-    
     .descri-centro{
         @extend .descri-video;
     }
@@ -56,6 +55,7 @@ main{
         background-color: $bg-main;
         padding-bottom: 2.5rem;
         padding-top: 1.25rem;
+        text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61);
     }
 }
 /*---------Pseudoclases del Index---------*/

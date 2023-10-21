@@ -4,6 +4,7 @@ main{
         text-align: center;
         background-color: $bg-main;
         padding: 2.1875rem .625rem 2.1875rem .625rem;
+        text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61);
     }
     .imagen-conoce{
         @include grid(space-between, center, 1.25rem, repeat(4, 1fr), repeat(2, 1fr));

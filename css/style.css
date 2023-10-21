@@ -49,15 +49,12 @@ header {
       font-weight: 500;
       line-height: 2.375rem;
       text-transform: uppercase; }
-
-/* -----------Pseudoclases-----------*/
-.menu li a:hover {
-  color: black;
-  text-decoration: underline;
-  transition: 0.5s; }
-
-nav #toggle, nav label {
-  display: none; }
+    .nav-wrapper nav .menu li a:hover {
+      color: black;
+      text-decoration: underline;
+      transition: 0.5s; }
+  .nav-wrapper nav #toggle, .nav-wrapper nav label {
+    display: none; }
 
 /*------------Main Index/Inicio---------*/
 main .conte-figuras {
@@ -113,7 +110,8 @@ main .comentario {
   font-family: 'Zilla Slab', serif;
   background-color: #caa892b2;
   padding-bottom: 2.5rem;
-  padding-top: 1.25rem; }
+  padding-top: 1.25rem;
+  text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61); }
 
 /*---------Pseudoclases del Index---------*/
 .conte-figuras .figuras:hover {
@@ -124,7 +122,8 @@ main .comentario {
 main .descri-conoce {
   text-align: center;
   background-color: #caa892b2;
-  padding: 2.1875rem .625rem 2.1875rem .625rem; }
+  padding: 2.1875rem .625rem 2.1875rem .625rem;
+  text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61); }
 
 main .imagen-conoce {
   display: grid;
@@ -220,22 +219,58 @@ main .formulario {
   background-color: #caa892b2;
   width: 100%;
   height: auto;
-  padding: 3.75rem 0rem; }
+  padding: .625rem; }
+  main .formulario form {
+    margin: 10px;
+    width: auto; }
+  main .formulario .soli-turno {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1.5625rem;
+    text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61); }
   main .formulario .campos-1 {
-    display: flex;
+    border: 2px solid #0f0f0f;
+    border-radius: .5rem;
+    margin: .625rem 0;
     height: 6.25rem;
-    padding: 0px .9375rem; }
+    padding: 1.25rem 3.125rem; }
+    main .formulario .campos-1 .legend-1 {
+      padding: .3125rem .625rem;
+      font-weight: bold;
+      font-size: 1.25rem; }
+      main .formulario .campos-1 .legend-1 label {
+        display: block;
+        margin-bottom: 1.25rem; }
+      main .formulario .campos-1 .legend-1 input {
+        width: 100%;
+        padding: .5rem;
+        margin-bottom: 1rem;
+        box-sizing: border-box; }
   main .formulario .campos-2 {
-    display: flex;
+    border: 2px solid #0f0f0f;
+    border-radius: 8px;
+    margin: .625rem 0;
     height: 6.25rem;
-    padding: 0rem .9375rem; }
-  main .formulario .legend-1 {
-    padding-bottom: 1.5625rem; }
-  main .formulario .legend-2 {
-    padding-bottom: 1.5625rem; }
-  main .formulario input {
-    margin-top: .625rem;
-    margin-bottom: 1.875rem; }
+    padding: 1.25rem 3.125rem; }
+    main .formulario .campos-2 .legend-2 {
+      padding: .3125rem .625rem;
+      font-weight: bold;
+      font-size: 1.25rem; }
+      main .formulario .campos-2 .legend-2 label {
+        display: block;
+        margin-bottom: 8px; }
+      main .formulario .campos-2 .legend-2 input {
+        width: 100%;
+        padding: .5rem;
+        margin-bottom: 1rem;
+        box-sizing: border-box; }
+  main .formulario input[type="submit"] {
+    background-color: #5d5f5d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: .3125rem; }
+  main .formulario input[type="submit"]:hover {
+    background-color: #adafad; }
 
 footer {
   display: flex;
@@ -455,6 +490,27 @@ footer {
     padding-left: .625rem;
     padding-right: .625rem; }
   /*----------Main Contacto-------*/
+  main .formulario {
+    padding: .3125rem; }
+    main .formulario .soli-turno {
+      padding-top: .9375rem;
+      font-size: .75rem; }
+    main .formulario .campos-1 {
+      height: auto;
+      width: 6.25rem;
+      padding: .625rem 1.875rem .9375rem 1.875rem; }
+      main .formulario .campos-1 .legend-1 {
+        font-size: 1.125rem; }
+        main .formulario .campos-1 .legend-1 label {
+          font-size: 3.125rem; }
+    main .formulario .campos-2 {
+      height: auto;
+      width: 6.25rem;
+      padding: .625rem 1.875rem .9375rem 1.875rem; }
+      main .formulario .campos-2 .legend-2 {
+        font-size: 1.125rem; }
+        main .formulario .campos-2 .legend-2 label {
+          font-size: .625rem; }
   /* --------Footer---------- */
   footer {
     padding-left: 3.125rem; }
@@ -544,7 +600,7 @@ footer {
     display: none; }
   main .figuras {
     width: 35%;
-    margin-left: 6.0625rem; }
+    margin-left: 5.75rem; }
   main .comentario {
     font-size: .5rem; }
   /* -------Main de Conocenos------ */
