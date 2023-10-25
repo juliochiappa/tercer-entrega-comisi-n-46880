@@ -11,7 +11,6 @@
         <meta property="og:description" content="Tratamientos Corporales y Faciales">
         <title>Tratamientos - CIEC</title>
         <link rel="shortcut icon" href="../assets/img/Iconos/Logo.ico" type="image/x-icon"> 
-        <title>Tratamientos</title>
         <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -20,7 +19,6 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
@@ -43,38 +41,40 @@
                 </nav>
             </div>
         </header> 
-        <main class="container-fluid row bg-antiquewhite m-0 pt-4 pb-4 justify-content-between gap-3"> 
-            <div>
-                <h1 class="Trata text-center animate__animated animate__backInLeft">Tratamientos Faciales y Corporales</h1>
+        <main>
+            <div class="descri-trata">
+                <h1 class="animate__animated animate__backInLeft">Algunos de los tratamientos faciales y corporales</h1>
             </div>
-            <div class="card bg-lila" style="width: 18rem">
-                <img src="../assets/img/Cavitacion-Abdomen.jpeg" class="card-img-top pt-4" alt="Cavitación Abdomen">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Cavitación de Abdomen</h5>
-                  <p class="card-text">La cavitación <strong>es una técnica no quirúrgica para eliminar</strong> la grasa localizada mediante el uso de ultrasonidos de baja frecuencia, que se aplican sobre la zona donde se concentra la grasa para disolver las células adiposas desde su interior.</p>
+            <section class="contenedor-trata">
+                <div class="trata-1 trata">
+                    <img src="../assets/img/Cavitacion-Abdomen.jpeg" class="trata-1" alt="Cavitación Abdomen">
+                    <div class="descri-card">
+                      <h3>Cavitación de Abdomen</h3>
+                      <p>Es una <strong >técnica no quirúrgica para eliminar</strong> la grasa localizada mediante el uso de ultrasonidos de baja frecuencia.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="card bg-lila" style="width: 18rem;">
-                <img src="../assets/img/Cavitacion-Pierna.jpeg" class="card-img-top pt-4" alt="Cavitación Piernas">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Cavitación de Piernas</h5>
-                  <p class="card-text">La cavitacion <strong>es un tratamiento sin cirugía que logra reducir</strong> la grasa localizada y prácticamente hace desaparecer la celulitis, generando con ello innumerables beneficios en nuestro organismo.</p>
+                <div class="trata-2 trata">
+                    <img src="../assets/img/Cavitacion-Pierna.jpeg" class="trata-2" alt="Cavitación Piernas">
+                    <div class="descri-card">
+                      <h3>Cavitación de Piernas</h3>
+                      <p>Es un <strong> tratamiento sin cirugía que logra reducir</strong> la grasa localizada y prácticamente hace desaparecer la celulitis.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="card bg-lila" style="width: 18rem;">
-                <img src="../assets/img/Mascara de LED.png" class="card-img-top pt-4" alt="Máscara de Led">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Máscara de LED</h5>
-                  <p class="card-text">La máscara LED es un proceso <strong>similar a la fotosíntesis</strong> donde la luz LED mediante la máscara actúa de forma directa sobre la piel.</p>
+                <div class="trata-3 trata">
+                    <img src="../assets/img/Mascara de LED.png" class="trata-3" alt="Máscara de Led">
+                    <div class="descri-card">
+                      <h3>Máscara de LED</h3>
+                      <p>Es un <strong> proceso similar a la fotosíntesis</strong> donde la luz LED mediante la máscara actúa de forma directa sobre la piel.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="card bg-lila" style="width: 18rem;">
-                <img src="../assets/img/Presoterapia.jpeg" class="card-img-top pt-4" alt="Presoterapia">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Presoterapia</h5>
-                  <p class="card-text">La presoterapia corporal es, principalmente, <strong>un procedimiento estético que consiste en la aplicación de presión de aire</strong> a través de un traje neumático, centrándose en el sistema linfático y circulatorio.</p>
+                <div class="trata-4 trata">
+                    <img src="../assets/img/Presoterapia.jpeg" class="trata-4" alt="Presoterapia">
+                    <div class="descri-card">
+                      <h3>Presoterapia</h3>
+                      <p>Es un procedimiento estético que <strong> consiste en la aplicación de presión de aire</strong> a través de un traje neumático.</p>
+                    </div>
                 </div>
-              </div>
+            </section>        
         </main>
         <footer>
             <div class="contacto">
@@ -96,7 +96,5 @@
                 <img src="../assets/img/Iconos/youtube.png" alt="Youtube">
             </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
 </html>

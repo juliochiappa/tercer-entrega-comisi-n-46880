@@ -1,3 +1,4 @@
+/*------------Media Queries 320px----------*/
 @media (max-width: 320px){
     header{
         .nav-wrapper{
@@ -10,6 +11,9 @@
             nav .menu a{
                 font-size: .5rem;
             }
+            .menu li a:hover{
+                font-size: .625rem;
+            }
         }
     }
     /*-------Main Index--------*/
@@ -17,12 +21,9 @@
         .descri-centro{
             font-size: .4375rem;
         }
-        .figuras h3{
-            display: none;
-        }
         .figuras{
             width: 35%;
-            margin-left: 5.75rem;
+            margin-left: 5.625rem;
         }
         .comentario{
             font-size: .5rem;
@@ -33,14 +34,9 @@
         .imagen-conoce .centro{
             width: 7.5rem;
             height: 7.5rem;
-            margin-left: 5.3125rem;;
-            margin-top: .9375rem;
-        }
-        .descri-conoce{
-        display: none;
+            margin-left: 4.6875rem;
         }
         .direccion h3{
-            font-size: .875rem;
             padding-top: .625rem;
         }
         .direccion iframe{
@@ -50,19 +46,10 @@
     }
     /*-----------Main Videos----------*/
     main{
-        .descri-video h1{
-            font-size: .9375rem;
-        }
         .contenedor-video .videos{
-            width: 75%;
             padding-left: 5.3125rem;
         }
-        .explica h2{
-            font-size: .875rem;
-            padding: .9375rem;
-            text-shadow: none;
-        }       
-    }
+     }
     /* --------Footer---------- */
     footer{
         padding-right: .625rem;

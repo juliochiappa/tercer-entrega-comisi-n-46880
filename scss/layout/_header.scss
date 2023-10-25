@@ -1,3 +1,4 @@
+/*------------Header----------*/
 header{
     @include flex(row, wrap, space-between, flex-end, none);
     background-color: $bg-header-footer;
@@ -38,9 +39,11 @@ header{
             text-transform: uppercase;
         }
         .menu li a:hover{
+            transform: scale(1.1);
+            font-size: 1.25rem;
             color: black;
             text-decoration: underline;
-            transition: 0.5s;
+            transition: 0.8s;
         }
     } 
     nav #toggle, nav label{

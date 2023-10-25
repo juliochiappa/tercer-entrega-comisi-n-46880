@@ -1,3 +1,4 @@
+/*------------Media Queries 425px----------*/
 @media (max-width:425px){
     header{
         .nav-wrapper{
@@ -54,7 +55,7 @@
         }
         .imagen-conoce .centro{
             width: 40%;
-            margin-left: 7.5rem;
+            margin-left: 6.875rem;
         }
         .descri-conoce{
             font-size: .75rem;
@@ -93,9 +94,12 @@
     /*----------Main Contacto-------*/
     main{
         .formulario {
-            padding: .3125rem;
+            padding: 0rem;
+            form{
+                padding: 0px .625rem .625rem .625rem;
+            }
             .soli-turno{
-                padding-top: .9375rem;
+                padding-top: .625rem;
                 font-size: .75rem;
             }
             .campos-1 {
@@ -105,7 +109,7 @@
                 .legend-1 {
                     font-size: 1.125rem;
                     label {
-                        font-size: 3.125rem;
+                        font-size: .625rem;
                     }
                 }
             }

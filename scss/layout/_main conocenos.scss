@@ -3,15 +3,14 @@ main{
     .descri-conoce{
         text-align: center;
         background-color: $bg-main;
-        padding: 2.1875rem .625rem 2.1875rem .625rem;
-        text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61);
+        padding: 2.1875rem 1.25rem 2.1875rem 1.25rem;
     }
     .imagen-conoce{
-        @include grid(space-between, center, 1.25rem, repeat(4, 1fr), repeat(2, 1fr));
+        @include grid(space-between, center, 1.875rem, repeat(4, 1fr), repeat(2, 1fr));
         width: 100%;
         height: auto;
         background-color: $bg-main;
-        padding: .9375rem .9375rem;
+        padding: .9375rem 1.5625rem;
         grid-template-areas:
         "centro1 centro2 centro3 centro4"
         "centro1 centro2 centro3 centro4"
@@ -35,6 +34,9 @@ main{
             overflow: hidden;
             box-shadow: .25rem .25rem .625rem rgba(85, 71, 71, 0.74);
         }
+        .centro:hover{
+            transform: scale(1.1);
+        }
     }
     .direccion iframe{
         width: 100%;
@@ -47,8 +49,8 @@ main{
         padding-top: 1.5625rem;
         text-align: center;
     }
-    .imagen-conoce .centro:hover{
-        box-shadow: 0px 0px 15px grey;
-        overflow: hidden;
-    }
+    // .imagen-conoce .centro:hover{
+    //     box-shadow: 0px 0px 15px grey;
+    //     overflow: hidden;
+    // }
 }

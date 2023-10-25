@@ -1,13 +1,16 @@
 /*---------Main Contactos---------*/
 main{
+    .gradiente{
+        background: linear-gradient($bg-main,rgba(241, 234, 234, 0.534),rgba(245, 237, 237, 0.658));
+    }
     .formulario {
         @include flex(row, wrap, center, center, 1.25rem);
         background-color: $bg-main;
         width: 100%;
-        height: auto;
+        height: 25rem;
         padding: .625rem;
             form {
-                margin: 10px;
+                padding: .625rem;
                 width: auto;
             }
             .soli-turno{

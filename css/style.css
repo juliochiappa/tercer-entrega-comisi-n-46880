@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box; }
 
+/*------------Header----------*/
 header {
   display: flex;
   flex-direction: row;
@@ -50,9 +51,11 @@ header {
       line-height: 2.375rem;
       text-transform: uppercase; }
     .nav-wrapper nav .menu li a:hover {
+      transform: scale(1.1);
+      font-size: 1.25rem;
       color: black;
       text-decoration: underline;
-      transition: 0.5s; }
+      transition: 0.8s; }
   .nav-wrapper nav #toggle, .nav-wrapper nav label {
     display: none; }
 
@@ -61,14 +64,15 @@ main .conte-figuras {
   display: grid;
   justify-content: space-between;
   align-content: center;
-  gap: 0.9375rem;
+  gap: 1.375rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
   height: auto;
-  padding: .9375rem;
+  padding: 1.25rem 1.5625rem;
   background-color: #caa892b2;
-  grid-template-areas: "figuras1 figuras2 figuras3 figuras4" "figuras1 figuras2 figuras3 figuras4"; }
+  grid-template-areas: "figuras1 figuras2 figuras3 figuras4"
+ "figuras1 figuras2 figuras3 figuras4"; }
 
 main .figuras-1 {
   grid-area: figuras1; }
@@ -103,40 +107,38 @@ main .figuras h3:hover {
 main .figuras h3 {
   text-align: center;
   background-color: #aa91c5;
+  padding: .625rem 0rem;
   transition: background-color 2s, color 3s; }
+
+main .figuras:hover {
+  transform: scale(1.1); }
 
 main .comentario {
   text-align: center;
   font-family: 'Zilla Slab', serif;
   background-color: #caa892b2;
   padding-bottom: 2.5rem;
-  padding-top: 1.25rem;
-  text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61); }
-
-/*---------Pseudoclases del Index---------*/
-.conte-figuras .figuras:hover {
-  box-shadow: 0px 0px 15px grey;
-  overflow: hidden; }
+  padding-top: 1.25rem; }
 
 /*------------Main Conocenos----------*/
 main .descri-conoce {
   text-align: center;
   background-color: #caa892b2;
-  padding: 2.1875rem .625rem 2.1875rem .625rem;
-  text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61); }
+  padding: 2.1875rem 1.25rem 2.1875rem 1.25rem; }
 
 main .imagen-conoce {
   display: grid;
   justify-content: space-between;
   align-content: center;
-  gap: 1.25rem;
+  gap: 1.875rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
   height: auto;
   background-color: #caa892b2;
-  padding: .9375rem .9375rem;
-  grid-template-areas: "centro1 centro2 centro3 centro4" "centro1 centro2 centro3 centro4"; }
+  padding: .9375rem 1.5625rem;
+  grid-template-areas: "centro1 centro2 centro3 centro4"
+ "centro1 centro2 centro3 centro4"; }
   main .imagen-conoce .centro-1 {
     grid-area: centro1; }
   main .imagen-conoce .centro-2 {
@@ -151,6 +153,8 @@ main .imagen-conoce {
     border-radius: 10%;
     overflow: hidden;
     box-shadow: 0.25rem 0.25rem 0.625rem rgba(85, 71, 71, 0.74); }
+  main .imagen-conoce .centro:hover {
+    transform: scale(1.1); }
 
 main .direccion iframe {
   width: 100%;
@@ -163,30 +167,86 @@ main .direccion h3 {
   padding-top: 1.5625rem;
   text-align: center; }
 
-main .imagen-conoce .centro:hover {
-  box-shadow: 0px 0px 15px grey;
-  overflow: hidden; }
+/*------------Main Tratamientos---------*/
+main .contenedor-trata {
+  display: grid;
+  justify-content: space-between;
+  align-content: center;
+  gap: 1.375rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: auto;
+  padding: .625rem 1.875rem 2.5rem 1.875rem;
+  background-color: #caa892b2;
+  grid-template-areas: "trata1 trata2 trata3 trata4"
+ "trata1 trata2 trata3 trata4"; }
+
+main .trata-1 {
+  grid-area: trata1; }
+
+main .trata-2 {
+  grid-area: trata2; }
+
+main .trata-3 {
+  grid-area: trata3; }
+
+main .trata-4 {
+  grid-area: trata4; }
+
+main .trata {
+  width: 100%;
+  background-color: #caa892b2;
+  border-radius: 5%;
+  overflow: hidden;
+  box-shadow: 0.25rem 0.25rem 0.625rem rgba(85, 71, 71, 0.74); }
+
+main .trata img {
+  width: 100%; }
+
+main .descri-card h3 {
+  padding-top: .625rem;
+  text-align: center;
+  color: black;
+  background-color: #bda8b9;
+  transition: background-color 2s, color 3s; }
+
+main .descri-card h3:hover {
+  transform: scale(1.1);
+  background-color: #bda8b9;
+  color: white; }
+
+main .descri-card p {
+  padding: .625rem;
+  text-align: center;
+  background-color: #bda8b9; }
+
+main .trata:hover {
+  transform: scale(1.1); }
 
 /*------------Main Videos----------*/
-main .descri-video, main .descri-centro, main .explica {
+main .descri-video, main .descri-centro, main .descri-trata {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   background-color: #caa892b2;
-  padding: 2.5rem 1.25rem 2.5rem 1.25rem;
+  padding: 1.5625rem 1.25rem 1.875rem 1.5625rem;
   text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61); }
 
 main .contenedor-video {
   display: grid;
   justify-content: space-between;
   align-content: center;
-  gap: 0.625rem;
+  gap: 1.375rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
   height: auto;
   padding-left: 1.875rem;
   background-color: #caa892b2;
-  grid-template-areas: "video1 video2 video3" "video1 video2 video3" "video4 video5 video6" "video4 video5 video6"; }
+  grid-template-areas: "video1 video2 video3"
+ "video1 video2 video3"
+ "video4 video5 video6"
+ "video4 video5 video6"; }
   main .contenedor-video .video-1 {
     grid-area: video1; }
   main .contenedor-video .video-2 {
@@ -204,11 +264,19 @@ main .contenedor-video {
     border-radius: 10%;
     overflow: hidden;
     z-index: 1; }
+  main .contenedor-video .videos:hover {
+    transform: scale(1.1); }
 
 main .explica {
-  padding: 1.25rem 1.25rem; }
+  background-color: #caa892b2;
+  text-align: center;
+  padding: 1.25rem 1.25rem;
+  text-shadow: none; }
 
 /*---------Main Contactos---------*/
+main .gradiente {
+  background: linear-gradient(#caa892b2, rgba(241, 234, 234, 0.534), rgba(245, 237, 237, 0.658)); }
+
 main .formulario {
   display: flex;
   flex-direction: row;
@@ -218,10 +286,10 @@ main .formulario {
   gap: 1.25rem;
   background-color: #caa892b2;
   width: 100%;
-  height: auto;
+  height: 25rem;
   padding: .625rem; }
   main .formulario form {
-    margin: 10px;
+    padding: .625rem;
     width: auto; }
   main .formulario .soli-turno {
     text-align: center;
@@ -272,6 +340,7 @@ main .formulario {
   main .formulario input[type="submit"]:hover {
     background-color: #adafad; }
 
+/*------------Footer----------*/
 footer {
   display: flex;
   flex-direction: row;
@@ -287,15 +356,23 @@ footer {
   footer .whatsapp img {
     width: 70%;
     border-radius: 50%; }
+  footer .whatsapp:hover {
+    transform: scale(1.2); }
   footer .insta img {
     width: 70%;
     border-radius: 50%; }
+  footer .insta:hover {
+    transform: scale(1.2); }
   footer .face img {
     width: 70%;
     border-radius: 50%; }
+  footer .face:hover {
+    transform: scale(1.2); }
   footer .youtube img {
     width: 70%;
     border-radius: 50%; }
+  footer .youtube:hover {
+    transform: scale(1.2); }
 
 .bg-lila {
   background-color: #aa91c5; }
@@ -303,6 +380,7 @@ footer {
 .bg-antiquewhite {
   background-color: #caa892b2; }
 
+/*------------Media Queries 768px----------*/
 @media (max-width: 768px) {
   header .nav-wrapper nav .logo {
     font-size: 1.875rem; }
@@ -327,6 +405,8 @@ footer {
     border-radius: 50%; }
   header .nav-wrapper nav .menu a {
     font-size: .9375rem; }
+  header .nav-wrapper .menu li a:hover {
+    font-size: .9375rem; }
   /*-------Main Index--------*/
   main .conte-figuras {
     display: grid;
@@ -335,18 +415,14 @@ footer {
     gap: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "figuras1 figuras2" "figuras1 figuras2" "figuras3 figuras4" "figuras3 figuras4"; }
+    grid-template-areas: "figuras1 figuras2"
+ "figuras1 figuras2"
+ "figuras3 figuras4"
+ "figuras3 figuras4"; }
   main .descri-centro {
     font-size: 1.125rem; }
-  main .figuras h3:hover {
-    transform: scale(1.1);
-    background-color: #977f93;
-    color: white; }
   main .figuras h3 {
-    text-align: center;
-    font-size: 1.125rem;
-    background-color: #aa91c5;
-    transition: background-color 2s, color 3s; }
+    font-size: 1.125rem; }
   main .figuras {
     width: 70%;
     margin-left: 3.125rem; }
@@ -361,21 +437,16 @@ footer {
     gap: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "centro1 centro2" "centro1 centro2" "centro3 centro4" "centro3 centro4"; }
+    grid-template-areas: "centro1 centro2"
+ "centro1 centro2"
+ "centro3 centro4"
+ "centro3 centro4"; }
   main .imagen-conoce .centro {
     width: 70%;
     margin-left: 3.125rem; }
   main .descri-conoce {
-    font-size: 0.9375rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem; }
-  main .direccion {
-    font-size: 1.25rem; }
+    font-size: 0.9375rem; }
   /*-----------Main Videos----------*/
-  main .descri-video, main .descri-centro, main .explica {
-    font-size: 1.125rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem; }
   main .contenedor-video {
     display: grid;
     justify-content: none;
@@ -385,7 +456,10 @@ footer {
     grid-template-rows: repeat(4, 1fr);
     gap: 1.25rem;
     padding-left: .9375rem;
-    grid-template-areas: "video1 video2" "video1 video2" "video3 video4" "video3 video4"; }
+    grid-template-areas: "video1 video2"
+ "video1 video2"
+ "video3 video4"
+ "video3 video4"; }
   main .video-5 {
     display: none; }
   main .video-6 {
@@ -396,9 +470,7 @@ footer {
     border-radius: 0%;
     overflow: visible; }
   main .explica {
-    font-size: 0.9375rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem; }
+    font-size: 0.9375rem; }
   /*---------Main Contactos---------*/
   main .label-campos1 {
     font-size: .75rem;
@@ -425,6 +497,7 @@ footer {
   footer .seguinos {
     font-size: .9375rem; } }
 
+/*------------Media Queries 425px----------*/
 @media (max-width: 425px) {
   header .nav-wrapper nav .logo {
     font-size: 1.25rem; }
@@ -443,7 +516,10 @@ footer {
     gap: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "figuras1" "figuras2" "figuras3" "figuras4"; }
+    grid-template-areas: "figuras1"
+ "figuras2"
+ "figuras3"
+ "figuras4"; }
   main .descri-centro {
     font-size: .75rem; }
   main .figuras h3 {
@@ -461,10 +537,13 @@ footer {
     gap: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "centro1" "centro2" "centro3" "centro4"; }
+    grid-template-areas: "centro1"
+ "centro2"
+ "centro3"
+ "centro4"; }
   main .imagen-conoce .centro {
     width: 40%;
-    margin-left: 7.5rem; }
+    margin-left: 6.875rem; }
   main .descri-conoce {
     font-size: .75rem; }
   main .direccion iframe {
@@ -472,7 +551,7 @@ footer {
   main .direccion h3 {
     font-size: .9375rem; }
   /*-----------Main Videos----------*/
-  main .descri-video, main .descri-centro, main .explica {
+  main .descri-video, main .descri-centro, main .descri-trata {
     font-size: .625rem; }
   main .contenedor-video {
     display: grid;
@@ -481,7 +560,10 @@ footer {
     gap: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "video1" "video2" "video3" "video4"; }
+    grid-template-areas: "video1"
+ "video2"
+ "video3"
+ "video4"; }
   main .contenedor-video .videos {
     width: 74%;
     padding-left: 6.25rem; }
@@ -491,9 +573,11 @@ footer {
     padding-right: .625rem; }
   /*----------Main Contacto-------*/
   main .formulario {
-    padding: .3125rem; }
+    padding: 0rem; }
+    main .formulario form {
+      padding: 0px .625rem .625rem .625rem; }
     main .formulario .soli-turno {
-      padding-top: .9375rem;
+      padding-top: .625rem;
       font-size: .75rem; }
     main .formulario .campos-1 {
       height: auto;
@@ -502,7 +586,7 @@ footer {
       main .formulario .campos-1 .legend-1 {
         font-size: 1.125rem; }
         main .formulario .campos-1 .legend-1 label {
-          font-size: 3.125rem; }
+          font-size: .625rem; }
     main .formulario .campos-2 {
       height: auto;
       width: 6.25rem;
@@ -527,6 +611,7 @@ footer {
     footer .seguinos {
       display: none; } }
 
+/*------------Media Queries 375px----------*/
 @media (max-width: 375px) {
   header .nav-wrapper nav .logo {
     font-size: 1rem; }
@@ -537,11 +622,9 @@ footer {
     display: none; }
   header .nav-wrapper nav .menu a {
     font-size: .625rem; }
-  /*-------Main Index--------*/
-  main .descri-centro {
+  header .nav-wrapper .menu li a:hover {
     font-size: .75rem; }
-  main .figuras h3 {
-    display: none; }
+  /*-------Main Index--------*/
   main .figuras {
     width: 40%;
     margin-left: 6.5625rem; }
@@ -562,12 +645,12 @@ footer {
   main .contenedor-video {
     padding: .3125rem .3125rem .3125rem .3125rem;
     gap: .9375rem; }
-  main .descri-video h1, main .descri-centro h1, main .explica h1 {
+  main .descri-video h1, main .descri-centro h1, main .descri-trata h1 {
     font-size: .9375rem; }
   main .contenedor-video .videos {
-    width: 72%;
+    width: 75%;
     padding-left: 6.5625rem; }
-  main .explica h2 {
+  main .explica {
     font-size: .875rem;
     padding: .9375rem; }
   /* --------Footer---------- */
@@ -586,6 +669,7 @@ footer {
     footer .seguinos {
       display: none; } }
 
+/*------------Media Queries 320px----------*/
 @media (max-width: 320px) {
   header .nav-wrapper nav .logo {
     font-size: .875rem; }
@@ -593,40 +677,29 @@ footer {
     display: none; }
   header .nav-wrapper nav .menu a {
     font-size: .5rem; }
+  header .nav-wrapper .menu li a:hover {
+    font-size: .625rem; }
   /*-------Main Index--------*/
   main .descri-centro {
     font-size: .4375rem; }
-  main .figuras h3 {
-    display: none; }
   main .figuras {
     width: 35%;
-    margin-left: 5.75rem; }
+    margin-left: 5.625rem; }
   main .comentario {
     font-size: .5rem; }
   /* -------Main de Conocenos------ */
   main .imagen-conoce .centro {
     width: 7.5rem;
     height: 7.5rem;
-    margin-left: 5.3125rem;
-    margin-top: .9375rem; }
-  main .descri-conoce {
-    display: none; }
+    margin-left: 4.6875rem; }
   main .direccion h3 {
-    font-size: .875rem;
     padding-top: .625rem; }
   main .direccion iframe {
     height: 6.25rem;
     padding-top: .75rem; }
   /*-----------Main Videos----------*/
-  main .descri-video h1, main .descri-centro h1, main .explica h1 {
-    font-size: .9375rem; }
   main .contenedor-video .videos {
-    width: 75%;
     padding-left: 5.3125rem; }
-  main .explica h2 {
-    font-size: .875rem;
-    padding: .9375rem;
-    text-shadow: none; }
   /* --------Footer---------- */
   footer {
     padding-right: .625rem; }

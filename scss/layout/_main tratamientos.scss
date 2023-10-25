@@ -1,2 +1,59 @@
-
-
+/*------------Main Tratamientos---------*/
+main{
+    .descri-trata{
+        @extend .descri-video;
+    }
+    .contenedor-trata{
+        @include grid(space-between, center, 1.375rem, repeat(4, 1fr), repeat(2, 1fr));
+        width: 100%;
+        height: auto;
+        padding: .625rem 1.875rem 2.5rem 1.875rem;
+        background-color: $bg-main;
+        grid-template-areas:
+        "trata1 trata2 trata3 trata4"
+        "trata1 trata2 trata3 trata4"
+        ;
+    }
+        .trata-1{
+            grid-area: trata1;
+        }
+        .trata-2{
+            grid-area: trata2;
+        }
+        .trata-3{
+            grid-area: trata3;
+        }
+        .trata-4{
+            grid-area: trata4;
+        }
+        .trata{
+            width: 100%;
+            background-color: $bg-main;
+            border-radius: 5%;
+            overflow: hidden;
+            box-shadow: .25rem .25rem .625rem rgba(85, 71, 71, 0.74);
+        }
+        .trata img{
+            width: 100%;
+        }
+            .descri-card h3{
+                padding-top: .625rem;
+                text-align: center;
+                color: black;
+                background-color: rgb(189, 168, 185);   
+                transition: background-color 2s, color 3s;
+            }
+            .descri-card h3:hover{
+                transform: scale(1.1);
+                background-color: rgb(189, 168, 185);
+                color: white;
+            }
+            .descri-card p{
+                padding: .625rem;
+                text-align: center;
+                background-color: rgb(189, 168, 185);
+            }
+        .trata:hover{
+            transform: scale(1.1);
+        }    
+}

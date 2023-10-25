@@ -1,3 +1,4 @@
+/*------------Media Queries 375px----------*/
 @media (max-width: 375px){
     header{
         .nav-wrapper{
@@ -14,16 +15,13 @@
             nav .menu a{
                 font-size: .625rem;
             }
+            .menu li a:hover{
+                font-size: .75rem;
+            }
         }
     }
 /*-------Main Index--------*/
     main{        
-        .descri-centro{
-            font-size: .75rem;
-        }
-        .figuras h3{
-            display: none;
-        }
         .figuras{
             width: 40%;
             margin-left: 6.5625rem;
@@ -59,10 +57,10 @@
             font-size: .9375rem;
         }
         .contenedor-video .videos{
-            width: 72%;
+            width: 75%;
             padding-left: 6.5625rem;
         }
-        .explica h2{
+        .explica{
             font-size: .875rem;
             padding: .9375rem;
         }       

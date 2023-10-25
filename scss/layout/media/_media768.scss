@@ -1,3 +1,4 @@
+/*------------Media Queries 768px----------*/
 @media (max-width: 768px){
     header{
         .nav-wrapper{
@@ -26,6 +27,9 @@
             nav .menu a{
                 font-size: .9375rem;
             }
+            .menu li a:hover{
+                font-size: .9375rem;
+            }
         }
     }
     /*-------Main Index--------*/
@@ -42,16 +46,8 @@
         .descri-centro{
             font-size: $tamaño-h1;
         }
-        .figuras h3:hover{
-            transform: scale(1.1);
-            background-color: rgb(151, 127, 147);
-            color: white;
-        }
         .figuras h3{
-            text-align: center;
             font-size: 1.125rem;
-            background-color: $bg-header-footer;    
-            transition: background-color 2s, color 3s ;
         }
         .figuras{
             width: 70%;
@@ -79,20 +75,10 @@
         }
         .descri-conoce{
            font-size: $tamaño-h2;
-           padding-left: 1.25rem;
-           padding-right: 1.25rem;
-        }
-        .direccion{
-            font-size: 1.25rem;
         }
     }    
     /*-----------Main Videos----------*/
     main{
-        .descri-video{
-            font-size: $tamaño-h1;
-            padding-left: 1.25rem;
-            padding-right: 1.25rem;
-        }
         .contenedor-video{
             @include grid(none, none, 1.25rem, repeat(2, 1fr), repeat(4, 1fr));
             gap: 1.25rem;
@@ -118,8 +104,6 @@
         }       
         .explica{
             font-size: $tamaño-h2;
-            padding-left: 1.25rem;
-            padding-right: 1.25rem; 
         }
     }
     /*---------Main Contactos---------*/

@@ -4,11 +4,11 @@ main{
         text-align: center;
         font-family: 'Poppins', sans-serif;
         background-color: $bg-main;
-        padding: 2.5rem 1.25rem 2.5rem 1.25rem;
+        padding: 1.5625rem 1.25rem 1.875rem 1.5625rem;
         text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61);
     }
     .contenedor-video{
-        @include grid(space-between, center, .625rem, repeat(3, 1fr), repeat(2, 1fr));
+        @include grid(space-between, center, 1.375rem, repeat(3, 1fr), repeat(2, 1fr));
         width: 100%;
         height: auto;
         padding-left: 1.875rem;
@@ -42,11 +42,16 @@ main{
             border-radius: 10%;
             overflow: hidden;
             z-index: 1
+        }
+        .videos:hover{
+            transform: scale(1.1);
         }       
     }
     .explica{
-        @extend .descri-video;
+        background-color: $bg-main;
+        text-align: center;
         padding: 1.25rem 1.25rem;
+        text-shadow: none;
     }
 }
 
