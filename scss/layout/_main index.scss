@@ -39,16 +39,16 @@ main{
         .figuras img{
             width: 100%;
         }
-        .figuras h3:hover{
-            transform: scale(1.1);
-            background-color: rgb(151, 127, 147);
-            color: white;
-        }
         .figuras h3{
             text-align: center;
             background-color: $bg-header-footer;
             padding: .625rem 0rem;    
             transition: background-color 2s, color 3s;
+        }
+        .figuras h3:hover{
+            transform: scale(1.1);
+            background-color: rgb(151, 127, 147);
+            color: white;
         }
         .figuras:hover{
             transform: scale(1.1);

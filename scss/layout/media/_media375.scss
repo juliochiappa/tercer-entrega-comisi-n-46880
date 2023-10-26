@@ -22,9 +22,15 @@
     }
 /*-------Main Index--------*/
     main{        
-        .figuras{
-            width: 40%;
-            margin-left: 6.5625rem;
+        .conte-figuras{
+            padding: 1.25rem 1.25rem;
+        }
+        .conte-figuras .figuras{
+            width: 45%;
+            margin-left: 5.9375rem;
+        }
+        .figuras h3:hover{
+            font-size: .9375rem;
         }
         .comentario{
             font-size: .625rem;
@@ -33,9 +39,9 @@
     /* -------Main de Conocenos------ */
     main{
         .imagen-conoce .centro{
-            width: 35%;
-            margin-left: 6.875rem;
-            margin-top: .9375rem;
+            width: 10.625rem;
+            margin-left: 5.3125rem;
+            margin-top: 1.875rem;
         }
         .descri-conoce{
             display: none;
@@ -45,6 +51,25 @@
         }
         .direccion iframe{
             height: 7.5rem;
+        }
+    }
+    /*------------Main Tratamientos---------*/
+    main{
+        .contenedor-trata{
+            padding: .625rem 0rem 2.5rem 6.5625rem;
+            ;
+        }
+        .contenedor-trata .descri-trata{
+            font-size: .9375rem;
+        }
+        .contenedor-trata .trata{
+            width: 10.625rem;
+        }
+        .contenedor-trata .descri-card h3{
+            font-size: .75rem;
+        }
+        .contenedor-trata .descri-card p{
+            display: none;
         }
     }
     /*-----------Main Videos----------*/
@@ -61,9 +86,18 @@
             padding-left: 6.5625rem;
         }
         .explica{
-            font-size: .875rem;
+            font-size: .75rem;
             padding: .9375rem;
         }       
+    }
+    /*----------Main Contacto-------*/
+    main{
+        .formulario .soli-turno{
+            font-size: .9375rem;
+        }
+        .formulario input[type="submit"] {
+            margin-left: 20%;
+        }
     }
     /* --------Footer---------- */
     footer{
@@ -89,5 +123,6 @@
         }
     }
 }
+
 
 

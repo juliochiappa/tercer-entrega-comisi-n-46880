@@ -17,31 +17,49 @@
         }
     }
     /*-------Main Index--------*/
-    main{
-        .descri-centro{
-            font-size: .4375rem;
+    main{        
+        .conte-figuras .figuras{
+            width: 50%;
+            margin-left: 4.5rem;
         }
-        .figuras{
-            width: 35%;
-            margin-left: 5.625rem;
+        .conte-figuras .figuras h3{
+            font-size: .75rem;
+        }
+        .figuras h3:hover{
+            font-size: .75rem;
         }
         .comentario{
-            font-size: .5rem;
+            font-size: .625rem;
         }
     }
     /* -------Main de Conocenos------ */
     main{
         .imagen-conoce .centro{
-            width: 7.5rem;
-            height: 7.5rem;
-            margin-left: 4.6875rem;
+            width: 9.6875rem;
+            margin-left: 4.375rem;
+            margin-top: 1.875rem;
         }
         .direccion h3{
-            padding-top: .625rem;
+            font-size: .875rem;
         }
         .direccion iframe{
-            height: 6.25rem;
-            padding-top: .75rem;
+            height: 7.5rem;
+        }
+    }
+    /*----------Main Tratamientos--------*/
+    main{
+        .contenedor-trata{
+            padding: .625rem 0rem 2.5rem 5.3125rem;
+            ;
+        }
+        .contenedor-trata .trata{
+            width: 9.375rem;
+        }
+        .contenedor-trata .descri-card h3{
+            font-size: .75rem;
+        }
+        .contenedor-trata .descri-card p{
+            display: none;
         }
     }
     /*-----------Main Videos----------*/
@@ -49,7 +67,43 @@
         .contenedor-video .videos{
             padding-left: 5.3125rem;
         }
+        .explica{
+            font-size: .625rem;
+        }    
      }
+         /*----------Main Contacto-------*/
+    main{
+        .formulario .campos-1 {
+            height: 10rem;
+        }
+        .formulario .campos-1 .legend-1 {
+            font-size: .9375rem;
+        }
+        .formulario .campos-1 label {
+            font-size: .75rem;
+            padding-right: .125rem;
+        }
+        .formulario .campos-1 input {
+            font-size: .625rem;
+            width: 45%
+        }
+        .formulario .campos-2 {
+            height: 10rem;
+        }
+        .formulario .campos-2 .legend-2 {
+            font-size: .9375rem;
+        }
+        .formulario .campos-2 label {
+            font-size: .75rem;
+        }
+        .formulario .campos-2 input {
+            font-size: .625rem;
+            width: 50%
+        }
+        .formulario input[type="submit"] {
+            margin-left: 15%;
+        }
+    }
     /* --------Footer---------- */
     footer{
         padding-right: .625rem;

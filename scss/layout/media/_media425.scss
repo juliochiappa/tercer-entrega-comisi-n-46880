@@ -19,8 +19,12 @@
     }
     /*-------Main Index--------*/
     main{
+        .descri-centro h1{
+            font-size: 1.375rem;
+        }
         .conte-figuras{
             @include grid(none, none, none, repeat(1, 1fr), repeat(4, 1fr));
+            padding: 1.25rem 1.875rem 1.25rem .625rem;
             grid-template-areas: 
             "figuras1"
             "figuras2"
@@ -28,15 +32,12 @@
             "figuras4"
             ;
         }
-        .descri-centro{
-            font-size: .75rem;
-        }
-        .figuras h3{
-            display: none;
-        }
-        .figuras{
-            width: 45%;
+        .conte-figuras .figuras{
+            width: 50%;
             margin-left: 6.875rem;
+        }
+        .conte-figuras .figuras h3{
+            font-size: .9375rem;
         }
         .comentario{
             font-size: .75rem;
@@ -46,6 +47,7 @@
     main{
         .imagen-conoce{
             @include grid(none, none, none, repeat(1, 1fr), repeat(4, 1fr));
+            padding: .9375rem .9375rem;
             grid-template-areas:
             "centro1"
             "centro2"
@@ -54,8 +56,8 @@
             ;
         }
         .imagen-conoce .centro{
-            width: 40%;
-            margin-left: 6.875rem;
+            width: 50%;
+            margin-left: 6.25rem;
         }
         .descri-conoce{
             font-size: .75rem;
@@ -65,6 +67,31 @@
         }
         .direccion h3{
             font-size: .9375rem;
+        }
+    }
+    /*------------Main Tratamientos---------*/
+    main{
+        .contenedor-trata{
+            @include grid(none, none, none, repeat(1, 1fr), repeat(4, 1fr));
+            padding: .625rem 0rem 2.5rem 6.875rem;
+            grid-template-areas:
+            "trata1"
+            "trata2"
+            "trata3"
+            "trata4"
+            ;
+        }
+        .contenedor-trata .descri-trata{
+            font-size: .9375rem;
+        }
+        .contenedor-trata .trata{
+            width: 65%;
+        }
+        .contenedor-trata .descri-card h3{
+            font-size: .9375rem;
+        }
+        .contenedor-trata .descri-card p{
+            display: none;
         }
     }
     /*-----------Main Videos----------*/
@@ -93,37 +120,40 @@
     }
     /*----------Main Contacto-------*/
     main{
-        .formulario {
-            padding: 0rem;
-            form{
-                padding: 0px .625rem .625rem .625rem;
-            }
-            .soli-turno{
-                padding-top: .625rem;
-                font-size: .75rem;
-            }
-            .campos-1 {
-                height: auto;
-                width: 6.25rem;
-                padding: .625rem 1.875rem .9375rem 1.875rem;
-                .legend-1 {
-                    font-size: 1.125rem;
-                    label {
-                        font-size: .625rem;
-                    }
-                }
-            }
-            .campos-2 {
-                height: auto;
-                width: 6.25rem;
-                padding: .625rem 1.875rem .9375rem 1.875rem;
-                .legend-2 {
-                    font-size: 1.125rem;
-                    label {
-                        font-size: .625rem;
-                    }
-                }
-            }
+        .formulario .soli-turno{
+            font-size: 1.125rem;
+        }
+        .formulario .campos-1 {
+            height: 9.375rem;
+            padding: .625rem 0rem;
+        }
+        .formulario .campos-1 .legend-1 {
+            font-size: 1.125rem;
+        }
+        .formulario .campos-1 label {
+            font-size: .9375rem;
+        }
+        .formulario .campos-1 input {
+            font-size: .75rem;
+            width: 45%;
+        }
+        .formulario .campos-2 {
+            height: 9.375rem;
+            padding: .625rem 0rem;
+        }
+        .formulario .campos-2 .legend-2 {
+            font-size: 1.125rem;
+        }
+        .formulario .campos-2 label {
+            font-size: .9375rem;
+        }
+        .formulario .campos-2 input {
+            font-size: .75rem;
+            width: 45%;
+        }
+        .formulario input[type="submit"] {
+            font-size: .75rem;
+            margin-left: 22%;
         }
     }
     /* --------Footer---------- */

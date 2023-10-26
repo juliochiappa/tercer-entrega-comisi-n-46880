@@ -43,15 +43,12 @@
             "figuras3 figuras4"
             ;
         }
-        .descri-centro{
-            font-size: $tamaño-h1;
-        }
-        .figuras h3{
-            font-size: 1.125rem;
-        }
-        .figuras{
+        .conte-figuras .figuras{
             width: 70%;
-            margin-left: 3.125rem;
+            margin-left: 3.4375rem;
+        }
+        .conte-figuras .figuras h3{
+            font-size: 1.125rem;
         }
         .comentario{
             font-size: $tamaño-h2;
@@ -60,6 +57,9 @@
     }
     /* -------Main de Conocenos------ */
     main{
+        .descri-conoce{
+            font-size: $tamaño-h2;
+         }
         .imagen-conoce{
             @include grid(none, none, none, repeat(2, 1fr), repeat(4, 1fr));
             grid-template-areas:
@@ -73,10 +73,30 @@
             width: 70%;
             margin-left: 3.125rem;
         }
-        .descri-conoce{
-           font-size: $tamaño-h2;
+    }
+    /*------------Main Tratamientos---------*/
+    main{
+        .contenedor-trata{
+            @include grid(none, none, none, repeat(2, 1fr), repeat(4, 1fr));
+            padding: .625rem .625rem 2.5rem 5.625rem;
+            grid-template-areas:
+            "trata1 trata2"
+            "trata1 trata2"
+            "trata3 trata4"
+            "trata3 trata4"
+            ;
         }
-    }    
+        .contenedor-trata .trata{
+            width: 80%;
+        }
+        .contenedor-trata .descri-card h3{
+            padding-top: 0rem;
+            font-size: 1.125rem;
+        }
+        .contenedor-trata .descri-card p{
+            font-size: .9375rem;
+        }
+    }
     /*-----------Main Videos----------*/
     main{
         .contenedor-video{
@@ -108,19 +128,40 @@
     }
     /*---------Main Contactos---------*/
     main{
-        .label-campos1{
-            font-size: .75rem;
-            padding-left: .625rem;
+        .formulario {
+            padding: 0rem .625rem 1.25rem .625rem;
         }
-        .input-campos1{
-            font-size: .75rem;
+        .formulario form {
+            padding-top: 0rem;
+            padding-bottom: 0rem;
         }
-        .label-campos2{
-            font-size: .75rem;
-            padding-left: .625rem;
+        .formulario .soli-turno{
+             font-size: 1.5625rem;
         }
-        .input-campos2{
-            font-size: .75rem;
+        .formulario .campos-1 {
+             padding: .9375rem .625rem .9375rem .625rem;
+        }
+        .formulario .campos-1 .legend-1 {
+             font-size: 1.25rem;
+        }
+        .formulario .campos-1 label {
+             font-size: .9375rem;
+        }
+        .formulario .campos-2 {
+             padding: .9375rem .625rem .9375rem .625rem;
+        }
+        .formulario .campos-2 .legend-2 {
+             font-size: 1.25rem;
+        }
+        .formulario .campos-2 label {
+             font-size: .9375rem;
+        }
+        .formulario .campos-2 input {
+             width: 30%;
+        }
+        .formulario input[type="submit"] {
+             font-size: .9375rem;
+             margin-left: 35%;
         }
     }
     /* --------Footer---------- */
@@ -146,3 +187,4 @@
         }
     }
 }
+

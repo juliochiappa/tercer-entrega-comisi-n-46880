@@ -1,0 +1,26 @@
+/*------------Media Queries 1024px----------*/
+main{
+    .formulario form {
+        width: 90%;
+    }
+    .formulario .soli-turno{
+        font-size: 1.875rem;
+    }
+    .formulario .campos-1 {
+        padding: .9375rem .625rem;
+    }
+    .formulario .campos-1 input {
+        font-size: .9375rem;
+    }
+    .formulario .campos-2 {
+        padding: .9375rem .625rem;
+    }
+    .formulario .campos-2 input {
+        font-size: .9375rem;
+    }
+    .formulario input[type="submit"] {
+        margin-top: 1.875rem;
+        font-size: 1.125rem;
+        margin-left: 40%;
+    }
+}

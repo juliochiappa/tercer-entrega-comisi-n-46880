@@ -7,73 +7,85 @@ main{
         @include flex(row, wrap, center, center, 1.25rem);
         background-color: $bg-main;
         width: 100%;
-        height: 25rem;
-        padding: .625rem;
+        height: 37.5rem;
+        padding: 0rem .625rem 1.25rem .625rem;
             form {
-                padding: .625rem;
-                width: auto;
+                padding-top: .625rem;
+                padding-bottom: 1.875rem;
+                width: 80%;
             }
             .soli-turno{
                 text-align: center;
                 font-family: 'Poppins', sans-serif;
+                font-size: $tamaño-h1;
                 padding-top: 1.5625rem;
                 text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61);
             }
             .campos-1 {
+                background-color: $bg-main;
                 border: 2px solid #0f0f0f;
+                margin-bottom: .9375rem;
                 border-radius: .5rem;
-                margin: .625rem 0;
-                height: 6.25rem;
-                padding: 1.25rem 3.125rem;
+                height: 7.5rem;
+                padding: 1.25rem 3.125rem .9375rem 3.125rem;
                 .legend-1 {
                     padding: .3125rem .625rem;
                     font-weight: bold;
+                    font-size: 1.5625rem;
+                }
+                label {
                     font-size: 1.25rem;
-                    label {
-                        display: block;
-                        margin-bottom: 1.25rem;
-                    }
-                    input {
-                        width: 100%;
-                        padding: .5rem;
-                        margin-bottom: 1rem;
-                        box-sizing: border-box;
-                    }
+                    padding: 0rem 1.25rem;
+                }
+                input {
+                    width: 30%;
+                    padding: .5rem;
+                    margin-bottom: 1rem;
+                    border-radius: 5%;
+                    box-sizing: border-box;
                 }
             }
             .campos-2 {
+                background-color: $bg-main;
                 border: 2px solid #0f0f0f;
-                border-radius: 8px;
-                margin: .625rem 0;
-                height: 6.25rem;
-                padding: 1.25rem 3.125rem;
+                border-radius: .5rem;
+                margin: 3.125rem 0rem .9375rem 0rem;
+                height: 7.5rem;
+                padding: 1.25rem 3.125rem .9375rem 3.125rem;
                 .legend-2 {
                     padding: .3125rem .625rem;
                     font-weight: bold;
+                    font-size: 1.5625rem;
+                }
+                label {
                     font-size: 1.25rem;
-                    label {
-                        display: block;
-                        margin-bottom: 8px;
-                    }
-                    input {
-                        width: 100%;
-                        padding: .5rem;
-                        margin-bottom: 1rem;
-                        box-sizing: border-box;
-                    }
+                    padding: 0rem 1.25rem;
+                }
+                input {
+                    width: 35%;
+                    padding: .5rem;
+                    margin-bottom: 1.25rem;
+                    border-radius: 5%;
+                    box-sizing: border-box;
                 }
             }
         input[type="submit"] {
-            background-color: #5d5f5d;
+            width: 12.5rem;
+            height: 2.1875rem;
+            margin-top: .9375rem;
+            justify-items: center;
+            background-color: #444644;
             color: #fff;
             cursor: pointer;
             border-radius: .3125rem;
         }
         input[type="submit"]:hover {
-            background-color: #adafad;
+            background-color: #6b6d6b;
+            transform: scale(1.1);
         }
     }
 }
+
 
 
 

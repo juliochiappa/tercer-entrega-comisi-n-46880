@@ -71,8 +71,7 @@ main .conte-figuras {
   height: auto;
   padding: 1.25rem 1.5625rem;
   background-color: #caa892b2;
-  grid-template-areas: "figuras1 figuras2 figuras3 figuras4"
- "figuras1 figuras2 figuras3 figuras4"; }
+  grid-template-areas: "figuras1 figuras2 figuras3 figuras4" "figuras1 figuras2 figuras3 figuras4"; }
 
 main .figuras-1 {
   grid-area: figuras1; }
@@ -99,16 +98,16 @@ main .figuras {
 main .figuras img {
   width: 100%; }
 
-main .figuras h3:hover {
-  transform: scale(1.1);
-  background-color: #977f93;
-  color: white; }
-
 main .figuras h3 {
   text-align: center;
   background-color: #aa91c5;
   padding: .625rem 0rem;
   transition: background-color 2s, color 3s; }
+
+main .figuras h3:hover {
+  transform: scale(1.1);
+  background-color: #977f93;
+  color: white; }
 
 main .figuras:hover {
   transform: scale(1.1); }
@@ -137,8 +136,7 @@ main .imagen-conoce {
   height: auto;
   background-color: #caa892b2;
   padding: .9375rem 1.5625rem;
-  grid-template-areas: "centro1 centro2 centro3 centro4"
- "centro1 centro2 centro3 centro4"; }
+  grid-template-areas: "centro1 centro2 centro3 centro4" "centro1 centro2 centro3 centro4"; }
   main .imagen-conoce .centro-1 {
     grid-area: centro1; }
   main .imagen-conoce .centro-2 {
@@ -179,8 +177,7 @@ main .contenedor-trata {
   height: auto;
   padding: .625rem 1.875rem 2.5rem 1.875rem;
   background-color: #caa892b2;
-  grid-template-areas: "trata1 trata2 trata3 trata4"
- "trata1 trata2 trata3 trata4"; }
+  grid-template-areas: "trata1 trata2 trata3 trata4" "trata1 trata2 trata3 trata4"; }
 
 main .trata-1 {
   grid-area: trata1; }
@@ -228,6 +225,7 @@ main .trata:hover {
 main .descri-video, main .descri-centro, main .descri-trata {
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
   background-color: #caa892b2;
   padding: 1.5625rem 1.25rem 1.875rem 1.5625rem;
   text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61); }
@@ -243,10 +241,7 @@ main .contenedor-video {
   height: auto;
   padding-left: 1.875rem;
   background-color: #caa892b2;
-  grid-template-areas: "video1 video2 video3"
- "video1 video2 video3"
- "video4 video5 video6"
- "video4 video5 video6"; }
+  grid-template-areas: "video1 video2 video3" "video1 video2 video3" "video4 video5 video6" "video4 video5 video6"; }
   main .contenedor-video .video-1 {
     grid-area: video1; }
   main .contenedor-video .video-2 {
@@ -286,59 +281,70 @@ main .formulario {
   gap: 1.25rem;
   background-color: #caa892b2;
   width: 100%;
-  height: 25rem;
-  padding: .625rem; }
+  height: 37.5rem;
+  padding: 0rem .625rem 1.25rem .625rem; }
   main .formulario form {
-    padding: .625rem;
-    width: auto; }
+    padding-top: .625rem;
+    padding-bottom: 1.875rem;
+    width: 80%; }
   main .formulario .soli-turno {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
     padding-top: 1.5625rem;
     text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61); }
   main .formulario .campos-1 {
+    background-color: #caa892b2;
     border: 2px solid #0f0f0f;
+    margin-bottom: .9375rem;
     border-radius: .5rem;
-    margin: .625rem 0;
-    height: 6.25rem;
-    padding: 1.25rem 3.125rem; }
+    height: 7.5rem;
+    padding: 1.25rem 3.125rem .9375rem 3.125rem; }
     main .formulario .campos-1 .legend-1 {
       padding: .3125rem .625rem;
       font-weight: bold;
-      font-size: 1.25rem; }
-      main .formulario .campos-1 .legend-1 label {
-        display: block;
-        margin-bottom: 1.25rem; }
-      main .formulario .campos-1 .legend-1 input {
-        width: 100%;
-        padding: .5rem;
-        margin-bottom: 1rem;
-        box-sizing: border-box; }
+      font-size: 1.5625rem; }
+    main .formulario .campos-1 label {
+      font-size: 1.25rem;
+      padding: 0rem 1.25rem; }
+    main .formulario .campos-1 input {
+      width: 30%;
+      padding: .5rem;
+      margin-bottom: 1rem;
+      border-radius: 5%;
+      box-sizing: border-box; }
   main .formulario .campos-2 {
+    background-color: #caa892b2;
     border: 2px solid #0f0f0f;
-    border-radius: 8px;
-    margin: .625rem 0;
-    height: 6.25rem;
-    padding: 1.25rem 3.125rem; }
+    border-radius: .5rem;
+    margin: 3.125rem 0rem .9375rem 0rem;
+    height: 7.5rem;
+    padding: 1.25rem 3.125rem .9375rem 3.125rem; }
     main .formulario .campos-2 .legend-2 {
       padding: .3125rem .625rem;
       font-weight: bold;
-      font-size: 1.25rem; }
-      main .formulario .campos-2 .legend-2 label {
-        display: block;
-        margin-bottom: 8px; }
-      main .formulario .campos-2 .legend-2 input {
-        width: 100%;
-        padding: .5rem;
-        margin-bottom: 1rem;
-        box-sizing: border-box; }
+      font-size: 1.5625rem; }
+    main .formulario .campos-2 label {
+      font-size: 1.25rem;
+      padding: 0rem 1.25rem; }
+    main .formulario .campos-2 input {
+      width: 35%;
+      padding: .5rem;
+      margin-bottom: 1.25rem;
+      border-radius: 5%;
+      box-sizing: border-box; }
   main .formulario input[type="submit"] {
-    background-color: #5d5f5d;
+    width: 12.5rem;
+    height: 2.1875rem;
+    margin-top: .9375rem;
+    justify-items: center;
+    background-color: #444644;
     color: #fff;
     cursor: pointer;
     border-radius: .3125rem; }
   main .formulario input[type="submit"]:hover {
-    background-color: #adafad; }
+    background-color: #6b6d6b;
+    transform: scale(1.1); }
 
 /*------------Footer----------*/
 footer {
@@ -374,11 +380,29 @@ footer {
   footer .youtube:hover {
     transform: scale(1.2); }
 
-.bg-lila {
-  background-color: #aa91c5; }
+/*------------Media Queries 1024px----------*/
+main .formulario form {
+  width: 90%; }
 
-.bg-antiquewhite {
-  background-color: #caa892b2; }
+main .formulario .soli-turno {
+  font-size: 1.875rem; }
+
+main .formulario .campos-1 {
+  padding: .9375rem .625rem; }
+
+main .formulario .campos-1 input {
+  font-size: .9375rem; }
+
+main .formulario .campos-2 {
+  padding: .9375rem .625rem; }
+
+main .formulario .campos-2 input {
+  font-size: .9375rem; }
+
+main .formulario input[type="submit"] {
+  margin-top: 1.875rem;
+  font-size: 1.125rem;
+  margin-left: 40%; }
 
 /*------------Media Queries 768px----------*/
 @media (max-width: 768px) {
@@ -415,21 +439,18 @@ footer {
     gap: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "figuras1 figuras2"
- "figuras1 figuras2"
- "figuras3 figuras4"
- "figuras3 figuras4"; }
-  main .descri-centro {
-    font-size: 1.125rem; }
-  main .figuras h3 {
-    font-size: 1.125rem; }
-  main .figuras {
+    grid-template-areas: "figuras1 figuras2" "figuras1 figuras2" "figuras3 figuras4" "figuras3 figuras4"; }
+  main .conte-figuras .figuras {
     width: 70%;
-    margin-left: 3.125rem; }
+    margin-left: 3.4375rem; }
+  main .conte-figuras .figuras h3 {
+    font-size: 1.125rem; }
   main .comentario {
     font-size: 0.9375rem;
     padding: 1.25rem; }
   /* -------Main de Conocenos------ */
+  main .descri-conoce {
+    font-size: 0.9375rem; }
   main .imagen-conoce {
     display: grid;
     justify-content: none;
@@ -437,15 +458,27 @@ footer {
     gap: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "centro1 centro2"
- "centro1 centro2"
- "centro3 centro4"
- "centro3 centro4"; }
+    grid-template-areas: "centro1 centro2" "centro1 centro2" "centro3 centro4" "centro3 centro4"; }
   main .imagen-conoce .centro {
     width: 70%;
     margin-left: 3.125rem; }
-  main .descri-conoce {
-    font-size: 0.9375rem; }
+  /*------------Main Tratamientos---------*/
+  main .contenedor-trata {
+    display: grid;
+    justify-content: none;
+    align-content: none;
+    gap: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: .625rem .625rem 2.5rem 5.625rem;
+    grid-template-areas: "trata1 trata2" "trata1 trata2" "trata3 trata4" "trata3 trata4"; }
+  main .contenedor-trata .trata {
+    width: 80%; }
+  main .contenedor-trata .descri-card h3 {
+    padding-top: 0rem;
+    font-size: 1.125rem; }
+  main .contenedor-trata .descri-card p {
+    font-size: .9375rem; }
   /*-----------Main Videos----------*/
   main .contenedor-video {
     display: grid;
@@ -456,10 +489,7 @@ footer {
     grid-template-rows: repeat(4, 1fr);
     gap: 1.25rem;
     padding-left: .9375rem;
-    grid-template-areas: "video1 video2"
- "video1 video2"
- "video3 video4"
- "video3 video4"; }
+    grid-template-areas: "video1 video2" "video1 video2" "video3 video4" "video3 video4"; }
   main .video-5 {
     display: none; }
   main .video-6 {
@@ -472,16 +502,30 @@ footer {
   main .explica {
     font-size: 0.9375rem; }
   /*---------Main Contactos---------*/
-  main .label-campos1 {
-    font-size: .75rem;
-    padding-left: .625rem; }
-  main .input-campos1 {
-    font-size: .75rem; }
-  main .label-campos2 {
-    font-size: .75rem;
-    padding-left: .625rem; }
-  main .input-campos2 {
-    font-size: .75rem; }
+  main .formulario {
+    padding: 0rem .625rem 1.25rem .625rem; }
+  main .formulario form {
+    padding-top: 0rem;
+    padding-bottom: 0rem; }
+  main .formulario .soli-turno {
+    font-size: 1.5625rem; }
+  main .formulario .campos-1 {
+    padding: .9375rem .625rem .9375rem .625rem; }
+  main .formulario .campos-1 .legend-1 {
+    font-size: 1.25rem; }
+  main .formulario .campos-1 label {
+    font-size: .9375rem; }
+  main .formulario .campos-2 {
+    padding: .9375rem .625rem .9375rem .625rem; }
+  main .formulario .campos-2 .legend-2 {
+    font-size: 1.25rem; }
+  main .formulario .campos-2 label {
+    font-size: .9375rem; }
+  main .formulario .campos-2 input {
+    width: 30%; }
+  main .formulario input[type="submit"] {
+    font-size: .9375rem;
+    margin-left: 35%; }
   /* --------Footer---------- */
   footer .whatsapp img {
     width: 50%; }
@@ -509,6 +553,8 @@ footer {
   header .nav-wrapper nav .menu a {
     font-size: .75rem; }
   /*-------Main Index--------*/
+  main .descri-centro h1 {
+    font-size: 1.375rem; }
   main .conte-figuras {
     display: grid;
     justify-content: none;
@@ -516,17 +562,13 @@ footer {
     gap: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "figuras1"
- "figuras2"
- "figuras3"
- "figuras4"; }
-  main .descri-centro {
-    font-size: .75rem; }
-  main .figuras h3 {
-    display: none; }
-  main .figuras {
-    width: 45%;
+    padding: 1.25rem 1.875rem 1.25rem .625rem;
+    grid-template-areas: "figuras1" "figuras2" "figuras3" "figuras4"; }
+  main .conte-figuras .figuras {
+    width: 50%;
     margin-left: 6.875rem; }
+  main .conte-figuras .figuras h3 {
+    font-size: .9375rem; }
   main .comentario {
     font-size: .75rem; }
   /* -------Main de Conocenos------ */
@@ -537,19 +579,35 @@ footer {
     gap: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "centro1"
- "centro2"
- "centro3"
- "centro4"; }
+    padding: .9375rem .9375rem;
+    grid-template-areas: "centro1" "centro2" "centro3" "centro4"; }
   main .imagen-conoce .centro {
-    width: 40%;
-    margin-left: 6.875rem; }
+    width: 50%;
+    margin-left: 6.25rem; }
   main .descri-conoce {
     font-size: .75rem; }
   main .direccion iframe {
     height: 9.375rem; }
   main .direccion h3 {
     font-size: .9375rem; }
+  /*------------Main Tratamientos---------*/
+  main .contenedor-trata {
+    display: grid;
+    justify-content: none;
+    align-content: none;
+    gap: none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: .625rem 0rem 2.5rem 6.875rem;
+    grid-template-areas: "trata1" "trata2" "trata3" "trata4"; }
+  main .contenedor-trata .descri-trata {
+    font-size: .9375rem; }
+  main .contenedor-trata .trata {
+    width: 65%; }
+  main .contenedor-trata .descri-card h3 {
+    font-size: .9375rem; }
+  main .contenedor-trata .descri-card p {
+    display: none; }
   /*-----------Main Videos----------*/
   main .descri-video, main .descri-centro, main .descri-trata {
     font-size: .625rem; }
@@ -560,10 +618,7 @@ footer {
     gap: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "video1"
- "video2"
- "video3"
- "video4"; }
+    grid-template-areas: "video1" "video2" "video3" "video4"; }
   main .contenedor-video .videos {
     width: 74%;
     padding-left: 6.25rem; }
@@ -572,29 +627,31 @@ footer {
     padding-left: .625rem;
     padding-right: .625rem; }
   /*----------Main Contacto-------*/
-  main .formulario {
-    padding: 0rem; }
-    main .formulario form {
-      padding: 0px .625rem .625rem .625rem; }
-    main .formulario .soli-turno {
-      padding-top: .625rem;
-      font-size: .75rem; }
-    main .formulario .campos-1 {
-      height: auto;
-      width: 6.25rem;
-      padding: .625rem 1.875rem .9375rem 1.875rem; }
-      main .formulario .campos-1 .legend-1 {
-        font-size: 1.125rem; }
-        main .formulario .campos-1 .legend-1 label {
-          font-size: .625rem; }
-    main .formulario .campos-2 {
-      height: auto;
-      width: 6.25rem;
-      padding: .625rem 1.875rem .9375rem 1.875rem; }
-      main .formulario .campos-2 .legend-2 {
-        font-size: 1.125rem; }
-        main .formulario .campos-2 .legend-2 label {
-          font-size: .625rem; }
+  main .formulario .soli-turno {
+    font-size: 1.125rem; }
+  main .formulario .campos-1 {
+    height: 9.375rem;
+    padding: .625rem 0rem; }
+  main .formulario .campos-1 .legend-1 {
+    font-size: 1.125rem; }
+  main .formulario .campos-1 label {
+    font-size: .9375rem; }
+  main .formulario .campos-1 input {
+    font-size: .75rem;
+    width: 45%; }
+  main .formulario .campos-2 {
+    height: 9.375rem;
+    padding: .625rem 0rem; }
+  main .formulario .campos-2 .legend-2 {
+    font-size: 1.125rem; }
+  main .formulario .campos-2 label {
+    font-size: .9375rem; }
+  main .formulario .campos-2 input {
+    font-size: .75rem;
+    width: 45%; }
+  main .formulario input[type="submit"] {
+    font-size: .75rem;
+    margin-left: 22%; }
   /* --------Footer---------- */
   footer {
     padding-left: 3.125rem; }
@@ -625,22 +682,37 @@ footer {
   header .nav-wrapper .menu li a:hover {
     font-size: .75rem; }
   /*-------Main Index--------*/
-  main .figuras {
-    width: 40%;
-    margin-left: 6.5625rem; }
+  main .conte-figuras {
+    padding: 1.25rem 1.25rem; }
+  main .conte-figuras .figuras {
+    width: 45%;
+    margin-left: 5.9375rem; }
+  main .figuras h3:hover {
+    font-size: .9375rem; }
   main .comentario {
     font-size: .625rem; }
   /* -------Main de Conocenos------ */
   main .imagen-conoce .centro {
-    width: 35%;
-    margin-left: 6.875rem;
-    margin-top: .9375rem; }
+    width: 10.625rem;
+    margin-left: 5.3125rem;
+    margin-top: 1.875rem; }
   main .descri-conoce {
     display: none; }
   main .direccion h3 {
     font-size: .875rem; }
   main .direccion iframe {
     height: 7.5rem; }
+  /*------------Main Tratamientos---------*/
+  main .contenedor-trata {
+    padding: .625rem 0rem 2.5rem 6.5625rem; }
+  main .contenedor-trata .descri-trata {
+    font-size: .9375rem; }
+  main .contenedor-trata .trata {
+    width: 10.625rem; }
+  main .contenedor-trata .descri-card h3 {
+    font-size: .75rem; }
+  main .contenedor-trata .descri-card p {
+    display: none; }
   /*-----------Main Videos----------*/
   main .contenedor-video {
     padding: .3125rem .3125rem .3125rem .3125rem;
@@ -651,8 +723,13 @@ footer {
     width: 75%;
     padding-left: 6.5625rem; }
   main .explica {
-    font-size: .875rem;
+    font-size: .75rem;
     padding: .9375rem; }
+  /*----------Main Contacto-------*/
+  main .formulario .soli-turno {
+    font-size: .9375rem; }
+  main .formulario input[type="submit"] {
+    margin-left: 20%; }
   /* --------Footer---------- */
   footer {
     padding-left: 3.125rem; }
@@ -680,26 +757,60 @@ footer {
   header .nav-wrapper .menu li a:hover {
     font-size: .625rem; }
   /*-------Main Index--------*/
-  main .descri-centro {
-    font-size: .4375rem; }
-  main .figuras {
-    width: 35%;
-    margin-left: 5.625rem; }
+  main .conte-figuras .figuras {
+    width: 50%;
+    margin-left: 4.5rem; }
+  main .conte-figuras .figuras h3 {
+    font-size: .75rem; }
+  main .figuras h3:hover {
+    font-size: .75rem; }
   main .comentario {
-    font-size: .5rem; }
+    font-size: .625rem; }
   /* -------Main de Conocenos------ */
   main .imagen-conoce .centro {
-    width: 7.5rem;
-    height: 7.5rem;
-    margin-left: 4.6875rem; }
+    width: 9.6875rem;
+    margin-left: 4.375rem;
+    margin-top: 1.875rem; }
   main .direccion h3 {
-    padding-top: .625rem; }
+    font-size: .875rem; }
   main .direccion iframe {
-    height: 6.25rem;
-    padding-top: .75rem; }
+    height: 7.5rem; }
+  /*----------Main Tratamientos--------*/
+  main .contenedor-trata {
+    padding: .625rem 0rem 2.5rem 5.3125rem; }
+  main .contenedor-trata .trata {
+    width: 9.375rem; }
+  main .contenedor-trata .descri-card h3 {
+    font-size: .75rem; }
+  main .contenedor-trata .descri-card p {
+    display: none; }
   /*-----------Main Videos----------*/
   main .contenedor-video .videos {
     padding-left: 5.3125rem; }
+  main .explica {
+    font-size: .625rem; }
+  /*----------Main Contacto-------*/
+  main .formulario .campos-1 {
+    height: 10rem; }
+  main .formulario .campos-1 .legend-1 {
+    font-size: .9375rem; }
+  main .formulario .campos-1 label {
+    font-size: .75rem;
+    padding-right: .125rem; }
+  main .formulario .campos-1 input {
+    font-size: .625rem;
+    width: 45%; }
+  main .formulario .campos-2 {
+    height: 10rem; }
+  main .formulario .campos-2 .legend-2 {
+    font-size: .9375rem; }
+  main .formulario .campos-2 label {
+    font-size: .75rem; }
+  main .formulario .campos-2 input {
+    font-size: .625rem;
+    width: 50%; }
+  main .formulario input[type="submit"] {
+    margin-left: 15%; }
   /* --------Footer---------- */
   footer {
     padding-right: .625rem; }
