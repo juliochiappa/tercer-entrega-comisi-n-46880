@@ -12,8 +12,8 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   gap: none;
-  background-color: #aa91c5;
-  padding: 0px 1.25rem;
+  background-color: #8b6aad;
+  padding: 0rem 0rem;
   position: sticky;
   top: 0rem;
   z-index: 2; }
@@ -30,7 +30,7 @@ header {
     align-items: center;
     gap: none;
     width: 100%;
-    background-color: #aa91c5;
+    background-color: #8b6aad;
     padding: 1rem 1.5rem; }
     .nav-wrapper nav .img-logo {
       border-radius: 50%; }
@@ -99,9 +99,10 @@ main .figuras img {
   width: 100%; }
 
 main .figuras h3 {
+  height: 2.1875rem;
   text-align: center;
-  background-color: #aa91c5;
-  padding: .625rem 0rem;
+  background-color: #c29fbc;
+  padding: .3125rem .3125rem;
   transition: background-color 2s, color 3s; }
 
 main .figuras h3:hover {
@@ -162,7 +163,7 @@ main .direccion iframe {
 
 main .direccion h3 {
   background-color: #caa892b2;
-  padding-top: 1.5625rem;
+  padding-top: 1.25rem;
   text-align: center; }
 
 /*------------Main Tratamientos---------*/
@@ -202,21 +203,20 @@ main .trata img {
   width: 100%; }
 
 main .descri-card h3 {
-  padding-top: .625rem;
   text-align: center;
-  color: black;
-  background-color: #bda8b9;
+  color: white;
+  background-color: #c29fbc;
   transition: background-color 2s, color 3s; }
 
 main .descri-card h3:hover {
   transform: scale(1.1);
   background-color: #bda8b9;
-  color: white; }
+  color: black; }
 
 main .descri-card p {
   padding: .625rem;
   text-align: center;
-  background-color: #bda8b9; }
+  background-color: #dbc4d7; }
 
 main .trata:hover {
   transform: scale(1.1); }
@@ -356,7 +356,7 @@ footer {
   gap: none;
   width: 100%;
   height: 6.25rem;
-  background-color: #aa91c5;
+  background-color: #8b6aad;
   padding-left: 1.25rem;
   padding-right: 1.25rem; }
   footer .whatsapp img {
@@ -572,6 +572,8 @@ main .formulario input[type="submit"] {
   main .comentario {
     font-size: .75rem; }
   /* -------Main de Conocenos------ */
+  main .descri-conoce h1 {
+    font-size: 1.125rem; }
   main .imagen-conoce {
     display: grid;
     justify-content: none;
@@ -696,8 +698,6 @@ main .formulario input[type="submit"] {
     width: 10.625rem;
     margin-left: 5.3125rem;
     margin-top: 1.875rem; }
-  main .descri-conoce {
-    display: none; }
   main .direccion h3 {
     font-size: .875rem; }
   main .direccion iframe {
@@ -767,6 +767,8 @@ main .formulario input[type="submit"] {
   main .comentario {
     font-size: .625rem; }
   /* -------Main de Conocenos------ */
+  main .descri-conoce h1 {
+    font-size: .9375rem; }
   main .imagen-conoce .centro {
     width: 9.6875rem;
     margin-left: 4.375rem;
@@ -781,7 +783,7 @@ main .formulario input[type="submit"] {
   main .contenedor-trata .trata {
     width: 9.375rem; }
   main .contenedor-trata .descri-card h3 {
-    font-size: .75rem; }
+    font-size: .875rem; }
   main .contenedor-trata .descri-card p {
     display: none; }
   /*-----------Main Videos----------*/

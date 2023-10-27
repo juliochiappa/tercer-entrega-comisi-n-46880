@@ -40,9 +40,10 @@ main{
             width: 100%;
         }
         .figuras h3{
+            height: 2.1875rem;
             text-align: center;
-            background-color: $bg-header-footer;
-            padding: .625rem 0rem;    
+            background-color: rgb(194, 159, 188);
+            padding: .3125rem .3125rem;    
             transition: background-color 2s, color 3s;
         }
         .figuras h3:hover{

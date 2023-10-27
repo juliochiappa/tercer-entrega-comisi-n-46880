@@ -45,6 +45,9 @@
     }
     /* -------Main de Conocenos------ */
     main{
+        .descri-conoce h1{
+            font-size: $tamaño-h1;
+        }
         .imagen-conoce{
             @include grid(none, none, none, repeat(1, 1fr), repeat(4, 1fr));
             padding: .9375rem .9375rem;

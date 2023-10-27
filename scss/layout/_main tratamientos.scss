@@ -37,21 +37,20 @@ main{
             width: 100%;
         }
             .descri-card h3{
-                padding-top: .625rem;
                 text-align: center;
-                color: black;
-                background-color: rgb(189, 168, 185);   
+                color: white;
+                background-color: rgb(194, 159, 188);   
                 transition: background-color 2s, color 3s;
             }
             .descri-card h3:hover{
                 transform: scale(1.1);
                 background-color: rgb(189, 168, 185);
-                color: white;
+                color: black;
             }
             .descri-card p{
                 padding: .625rem;
                 text-align: center;
-                background-color: rgb(189, 168, 185);
+                background-color: rgb(219, 196, 215);
             }
         .trata:hover{
             transform: scale(1.1);

@@ -34,6 +34,9 @@
     }
     /* -------Main de Conocenos------ */
     main{
+        .descri-conoce h1{
+            font-size: .9375rem;
+        }
         .imagen-conoce .centro{
             width: 9.6875rem;
             margin-left: 4.375rem;
@@ -56,7 +59,7 @@
             width: 9.375rem;
         }
         .contenedor-trata .descri-card h3{
-            font-size: .75rem;
+            font-size: .875rem;
         }
         .contenedor-trata .descri-card p{
             display: none;

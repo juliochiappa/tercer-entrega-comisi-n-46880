@@ -2,7 +2,7 @@
 header{
     @include flex(row, wrap, space-between, flex-end, none);
     background-color: $bg-header-footer;
-    padding: 0px 1.25rem;
+    padding: 0rem 0rem;
     position: sticky;
     top: 0rem;
     z-index: 2;
