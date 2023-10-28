@@ -381,6 +381,7 @@ footer {
     transform: scale(1.2); }
 
 /*------------Media Queries 1024px----------*/
+/*-----------Main Contacto---------*/
 main .formulario form {
   width: 90%; }
 
@@ -405,6 +406,7 @@ main .formulario input[type="submit"] {
   margin-left: 40%; }
 
 /*------------Media Queries 768px----------*/
+/*-----------Header---------*/
 @media (max-width: 768px) {
   header .nav-wrapper nav .logo {
     font-size: 1.875rem; }
@@ -542,6 +544,7 @@ main .formulario input[type="submit"] {
     font-size: .9375rem; } }
 
 /*------------Media Queries 425px----------*/
+/*-----------Header---------*/
 @media (max-width: 425px) {
   header .nav-wrapper nav .logo {
     font-size: 1.25rem; }
@@ -671,6 +674,7 @@ main .formulario input[type="submit"] {
       display: none; } }
 
 /*------------Media Queries 375px----------*/
+/*-----------Header---------*/
 @media (max-width: 375px) {
   header .nav-wrapper nav .logo {
     font-size: 1rem; }
@@ -747,6 +751,7 @@ main .formulario input[type="submit"] {
       display: none; } }
 
 /*------------Media Queries 320px----------*/
+/*-----------Header---------*/
 @media (max-width: 320px) {
   header .nav-wrapper nav .logo {
     font-size: .875rem; }

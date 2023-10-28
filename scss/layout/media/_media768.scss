@@ -1,9 +1,10 @@
 /*------------Media Queries 768px----------*/
+    /*-----------Header---------*/
 @media (max-width: 768px){
     header{
         .nav-wrapper{
             nav .logo{
-                 font-size: 1.875rem;
+                font-size: 1.875rem;
             }
             nav .menu{
                 width: 100%;
